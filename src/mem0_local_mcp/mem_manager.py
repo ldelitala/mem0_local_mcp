@@ -1,5 +1,9 @@
 import os
 from mem0 import Memory
+from mem0_local_mcp.utils import load_env
+
+# Carica le variabili d'ambiente
+load_env()
 
 class MemManager:
     def __init__(self, user_id=None):
