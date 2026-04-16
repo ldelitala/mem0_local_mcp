@@ -10,9 +10,9 @@ class MemManager:
         
         config = {
             "vector_store": {
-                "provider": "sqlite",
+                "provider": "chroma",
                 "config": {
-                    "path": os.path.join(base_path, "mem0_sqlite.db")
+                    "path": base_path
                 }
             },
         }
