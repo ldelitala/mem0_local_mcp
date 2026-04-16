@@ -38,3 +38,4 @@ mem0_db/
 .pytest_cache/
 .serena/
 .gemini/
+.worktrees
