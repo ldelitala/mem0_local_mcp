@@ -1,6 +1,6 @@
 import asyncio
 import os
-from mcp_server import add_memory, search_memory
+from mem0_local_mcp.mcp_server import add_memory, search_memory
 
 async def test():
     print("Testing add_memory...")

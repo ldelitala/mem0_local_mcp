@@ -1,5 +1,5 @@
 import os
-from utils import get_project_id
+from mem0_local_mcp.utils import get_project_id
 
 def test_get_project_id_is_consistent():
     path = os.getcwd()
