@@ -1,7 +1,7 @@
 import os
 from dotenv import load_dotenv
 from mem0 import Memory
-from utils import get_project_id
+from .utils import get_project_id
 
 load_dotenv()
 
