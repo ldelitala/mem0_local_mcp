@@ -13,7 +13,7 @@ class MemManager:
             "vector_store": {
                 "provider": "qdrant",
                 "config": {
-                    "path": "./mem0_db",
+                    "path": os.environ.get("MEM0_DB_PATH", "./mem0_db"),
                     "collection_name": "mem0_gemini_768",
                     "embedding_model_dims": 768
                 }

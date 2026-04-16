@@ -1,7 +1,9 @@
+import pytest
 import asyncio
 import os
 from mem0_local_mcp.mcp_server import add_memory, search_memory
 
+@pytest.mark.asyncio
 async def test():
     print("Testing add_memory...")
     res_add = await add_memory("L'utente preferisce Python per lo sviluppo backend", "user", "Preferenza linguaggio utente")
