@@ -10,10 +10,10 @@ Aggiungi la configurazione al tuo file di configurazione di Gemini CLI:
 {
   "mcpServers": {
     "mem0": {
-      "command": "/home/deli/projects/mem0_local_mcp/.venv/bin/python",
-      "args": ["/home/deli/projects/mem0_local_mcp/mcp_server.py"],
+      "command": "/home/deli/projects/mem0_local_mcp/.venv/bin/mem0-local-mcp",
       "env": {
-        "GOOGLE_API_KEY": "LA_TUA_CHIAVE_QUI"
+        "GOOGLE_API_KEY": "LA_TUA_CHIAVE_QUI",
+        "MEM0_DB_PATH": "/home/deli/projects/mem0_local_mcp/mem0_db"
       }
     }
   }
@@ -28,4 +28,6 @@ Aggiungi la configurazione al tuo file di configurazione di Gemini CLI:
 ## Sviluppo
 
 1. Attiva venv: `source .venv/bin/activate`
-2. Run server: `python mcp_server.py`
+2. Installa in modalità editabile: `pip install -e .`
+3. Run server: `mem0-local-mcp`
+4. Run test: `pytest`
