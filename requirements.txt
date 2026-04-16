@@ -1,0 +1,3 @@
+mcp
+mem0ai
+pydantic
