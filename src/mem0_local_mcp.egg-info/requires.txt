@@ -1,4 +1,0 @@
-mcp
-mem0ai
-pydantic
-python-dotenv

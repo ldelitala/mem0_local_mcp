@@ -1,2 +1,0 @@
-[console_scripts]
-mem0-local-mcp = mem0_local_mcp.mcp_server:mcp.run
