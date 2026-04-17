@@ -11,7 +11,7 @@ try:
     mgr = MemManager(user_id="test_user")
     
     print("Aggiunta memoria di test...")
-    mgr.add("Nuova memoria di test specifica per oggi.", category="test", reason="debug")
+    mgr.add("Nuova memoria di test specifica per oggi.", category="fact", importance=3, rationale="debug")
     
     print("Ricerca memorie totali...")
     results = mgr.search("memoria")

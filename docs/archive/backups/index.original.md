@@ -2,11 +2,8 @@
 
 | Articolo | Sommario | Data |
 |----------|----------|------|
-| [Memory Hierarchy Standard](./solutions/best-practices/hierarchical-memory-standard-2026-04-18.md) | Standard gerarchia (L1-L3) e consapevolezza (Rationale). | 2026-04-18 |
-| [Testing Improvement](./solutions/test-failures/testing-improvement-2026-04-18.md) | Miglioramento struttura test + isolamento DB. | 2026-04-18 |
 | [Mem0 Integration](./concepts/mem0-integration.md) | Integrazione mem0 + gestione DB. | 2026-04-17 |
 | [Build Log](./log.md) | Storico sviluppo + migrazione. | 2026-04-17 |
-| [Concurrency Fix](./solutions/integration-issues/mem0-concurrency-chroma-filelock-2026-04-17.md) | Gestione lock multi-processo per ChromaDB. | 2026-04-17 |
 | [MCP Visibility Fix](./solutions/integration-issues/mcp-server-visibility-fix-2026-04-17.md) | Ripristino visibilità MCP + configurazione venv. | 2026-04-17 |
 | [Mem0 v2 API Fix](./solutions/integration-issues/mem0-v2-api-fix-2026-04-17.md) | Fix ValueError/frozenset (API mem0 v2.0). | 2026-04-17 |
 

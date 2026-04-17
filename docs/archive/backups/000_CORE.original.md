@@ -3,12 +3,7 @@
 ## 🎯 DASHBOARD OPERATIVA
 **Progetto**: Mem0 Local MCP
 **Stato**: Attivo
-**Obiettivo**: Fornire memoria persistente e intra-sessione avanzata.
-**Target**:
-- Cattura info importanti da messaggi (prompt/risposta).
-- Ricerca semantica intra-sessione.
-- Persistenza del "perché" (scelte implementative/rationale).
-- Gestione contesto progetto vs contesto utente.
+**Obiettivo**: Server MCP locale per integrazione mem0.
 
 ## 📋 TASK ATTIVI
 - [ ] Mantenimento integrazione memoria + server MCP.
@@ -22,7 +17,6 @@
 - `docs/knowledge/solutions/`: Bug fix, best practices.
 
 ## 📜 ULTIME MODIFICHE
-- **2026-04-18**: Miglioramento testing. Creati unit tests con mock e fixture `conftest.py` per isolamento DB. Pulizia workspace (test spostati in `tests/`).
 - **2026-04-17**: Ripristino `.gemini/settings.json`. Config server MCP.
 - **2026-04-17**: Rinomina tool (`store_memory`, `search_memory`, `get_context`) per FastMCP.
 - **2026-04-17**: Migrazione KB a standard Portfolio. Aggiunta `000_CORE.md`. Refactor `GEMINI.md`.

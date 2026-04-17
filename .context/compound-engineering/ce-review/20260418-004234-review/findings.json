@@ -1,0 +1,39 @@
+{
+  "run_id": "20260418-004234-review",
+  "verdict": "Ready with fixes",
+  "findings": [
+    {
+      "title": "Breaking change: tool renamed to store_insight",
+      "severity": "P1",
+      "file": "src/mem0_local_mcp/mcp_server.py",
+      "line": 28,
+      "confidence": 1.0,
+      "autofix_class": "advisory",
+      "owner": "human",
+      "reviewer": "api-contract",
+      "suggested_fix": "Notare il cambiamento nelle note di rilascio o fornire alias legacy."
+    },
+    {
+      "title": "Legacy data handling for importance/rationale",
+      "severity": "P2",
+      "file": "src/mem0_local_mcp/mcp_server.py",
+      "line": 48,
+      "confidence": 0.9,
+      "autofix_class": "safe_auto",
+      "owner": "review-fixer",
+      "reviewer": "correctness",
+      "suggested_fix": "Assicurarsi che il formatter gestisca chiavi mancanti (già implementato parzialmente, ma verificare in search_insight)."
+    },
+    {
+      "title": "get_context tool lacks hierarchical filtering",
+      "severity": "P3",
+      "file": "src/mem0_local_mcp/mcp_server.py",
+      "line": 73,
+      "confidence": 0.8,
+      "autofix_class": "gated_auto",
+      "owner": "downstream-resolver",
+      "reviewer": "maintainability",
+      "suggested_fix": "Aggiornare get_context per mostrare livelli e rationale come search_insight."
+    }
+  ]
+}

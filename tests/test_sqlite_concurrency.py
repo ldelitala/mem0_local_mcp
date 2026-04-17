@@ -22,12 +22,12 @@ def test_sqlite_concurrency():
     
     # Mock adding to avoid actual API call
     m1.memory.add = MagicMock(return_value=True)
-    m1.add("Memory from instance 1", category="user", reason="testing")
+    m1.add("Memory from instance 1", category="fact", importance=2, rationale="testing")
     
     # Instance 2 (Concurrent)
     m2 = MemManager(user_id="user1")
     m2.memory.add = MagicMock(return_value=True)
-    m2.add("Memory from instance 2", category="user", reason="testing")
+    m2.add("Memory from instance 2", category="fact", importance=2, rationale="testing")
     
     # For search, we need a real result mock
     m1.memory.search = MagicMock(return_value=[

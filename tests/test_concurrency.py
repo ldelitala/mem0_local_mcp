@@ -12,7 +12,7 @@ def run_session(session_id, memory_text):
         mgr = MemManager(user_id=session_id)
         
         print(f"[{session_id}] Aggiunta: {memory_text}")
-        mgr.add(memory_text, category="concurrency_test")
+        mgr.add(memory_text, category="decision", rationale="concurrency test")
         
         print(f"[{session_id}] Ricerca...")
         results = mgr.search(memory_text)
