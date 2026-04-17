@@ -1,6 +1,6 @@
 import asyncio
 from mcp.server.fastmcp import FastMCP
-from .mem_manager import MemManager
+from mem0_local_mcp.mem_manager import MemManager
 
 mcp = FastMCP("Mem0 Memory Server")
 _mem = None
